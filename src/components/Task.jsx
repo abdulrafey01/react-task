@@ -23,7 +23,7 @@ export default function Task({task}) {
        <div style={{userSelect: "none"}} role="button" onClick={() => addPerson(task.id)} className="badge bg-primary mx-1">+</div>
        <div style={{userSelect: "none"}} role="button" onClick={() => removePerson(task.id)} className="badge bg-primary mx-1">-</div>
       </h4>
-       <span className={`badge ${task.counter===0 ? "bg-danger" : "bg-primary"} mx-1`} style={{width: "150px"}}>{task.counter===0 ? "Zero Persons" : `${task.counter} Person`}</span>
+       <span className={`badge ${task.counter===0 ? "bg-danger" : "bg-primary"} mx-1`} style={{width: "150px"}}>{task.counter===0 ? "Zero Persons" : `${task.counter} Persons`}</span>
        {
         edit ? (
           <>
